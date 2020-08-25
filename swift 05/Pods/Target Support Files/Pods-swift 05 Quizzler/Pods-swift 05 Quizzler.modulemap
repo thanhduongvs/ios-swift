@@ -1,0 +1,6 @@
+framework module Pods_swift_05_Quizzler {
+  umbrella header "Pods-swift 05 Quizzler-umbrella.h"
+
+  export *
+  module * { export * }
+}

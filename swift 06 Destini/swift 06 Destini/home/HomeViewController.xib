@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="swift_06_Destini" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButton" destination="I2h-ky-mdh" id="GZ2-io-0yF"/>
+                <outlet property="restartButton" destination="pso-3D-nxM" id="LMT-zi-Swx"/>
+                <outlet property="storyText" destination="NPm-5p-J9Q" id="4CH-Es-OZ2"/>
+                <outlet property="topButton" destination="ZRl-hT-a7M" id="OL6-8I-koB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-Og-3Vp">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRl-hT-a7M">
+                    <rect key="frame" x="16" y="686" width="382" height="48"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="cLV-M3-QC7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Top Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Qgn-AZ-bXs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2h-ky-mdh">
+                    <rect key="frame" x="16" y="766" width="382" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Cal-fF-6HW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bottom Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="dZy-a0-W8d"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-5p-J9Q" userLabel="Story Text View">
+                    <rect key="frame" x="16" y="60" width="382" height="610"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pso-3D-nxM">
+                    <rect key="frame" x="16" y="76" width="80" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="YSg-UA-Zbt"/>
+                        <constraint firstAttribute="width" constant="80" id="lTn-fS-XG8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Restart">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="restartPressed:" destination="-1" eventType="touchUpInside" id="Vd2-Mi-TjB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="I2h-ky-mdh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4An-xI-621"/>
+                <constraint firstItem="ZRl-hT-a7M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5SZ-tn-vQL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I2h-ky-mdh" secondAttribute="trailing" constant="16" id="JiT-xR-lry"/>
+                <constraint firstItem="pso-3D-nxM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="Lgp-bv-TDs"/>
+                <constraint firstItem="NPm-5p-J9Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="NzV-DK-m8l"/>
+                <constraint firstItem="NPm-5p-J9Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SAc-vs-ddT"/>
+                <constraint firstItem="I2h-ky-mdh" firstAttribute="top" secondItem="ZRl-hT-a7M" secondAttribute="bottom" constant="32" id="Sxo-YT-FGl"/>
+                <constraint firstItem="ZRl-hT-a7M" firstAttribute="top" secondItem="NPm-5p-J9Q" secondAttribute="bottom" constant="16" id="Vqb-bj-75V"/>
+                <constraint firstAttribute="trailing" secondItem="NPm-5p-J9Q" secondAttribute="trailing" constant="16" id="aOt-Xd-8i5"/>
+                <constraint firstItem="pso-3D-nxM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hID-vU-6VK"/>
+                <constraint firstItem="bfw-Og-3Vp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="l2T-Mn-VtO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZRl-hT-a7M" secondAttribute="trailing" constant="16" id="nTp-XO-qMQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I2h-ky-mdh" secondAttribute="bottom" constant="48" id="ouT-9E-K25"/>
+                <constraint firstItem="bfw-Og-3Vp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pVR-xr-F5Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bfw-Og-3Vp" secondAttribute="trailing" id="q50-9f-A01"/>
+                <constraint firstAttribute="bottom" secondItem="bfw-Og-3Vp" secondAttribute="bottom" id="tWe-PP-iXi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="505" height="944"/>
+    </resources>
+</document>
